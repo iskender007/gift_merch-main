@@ -1,0 +1,169 @@
+.box-hero {
+  position: relative;
+  z-index: 1;
+  height: 960px;
+}
+.hero {
+  position: absolute;
+  top: -25%;
+  z-index: -1;
+  padding: 180px 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../img/bg_gray.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img-star {
+    position: absolute;
+    top: -4%;
+    left: 40%;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__text {
+    margin-top: 25px;
+  }
+  &__inner {
+    position: relative;
+    display: grid;
+    height: 570px;
+    gap: 17px;
+    img {
+      border-radius: 15px;
+    }
+    .item1 {
+      width: 100%;
+      height: 100%;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+    .item2 {
+      width: 100%;
+      height: 300px;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .item3 {
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+    .item4 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+  }
+  &__circle {
+    margin: 0 auto;
+    margin-bottom: 6px;
+    cursor: pointer;
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    background-color: rgba(31, 171, 138, 0.36);
+  }
+  &__circle-green {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1fab8a;
+  }
+  &__price {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 17.935px */
+    color: #000;
+  }
+  &__total {
+    cursor: pointer;
+    position: absolute;
+    top: 3%;
+    right: 0px;
+    padding: 3px 5px;
+    font-family: Inter;
+    font-size: 12.667px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 13.363px */
+    border-radius: 50%;
+    background-color: #fafafa;
+    color: #272525;
+  }
+  &__basket {
+    position: absolute;
+    top: -6%;
+    right: 0%;
+    text-align: center;
+  }
+  &__box-buy {
+    position: relative;
+    display: flex;
+    gap: 28px;
+    width: 306px;
+    border-radius: 16px;
+    padding: 28px 18px;
+    background-color: #fafafa;
+    box-shadow: 0px 8.02828px 8.02828px -4.01414px rgba(26, 32, 44, 0.04),
+      0px 16.05656px 22px -8px rgba(82, 73, 131, 0.1);
+  }
+  &__btn-buy {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 14.77px */
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  &__btn-basket {
+    color: rgba(31, 171, 138, 0.5);
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 105.5%; /* 14.77px */
+    text-decoration-line: underline;
+    cursor: pointer;
+  }
+  &__btn-close {
+    position: absolute;
+    top: -10px;
+    right: -9px;
+  }
+  &__box-close {
+    position: absolute;
+    top: -6%;
+    right: 12%;
+  }
+}
+
+/* MEDAI QUERY max-width 1400px */
+@media screen and (max-width: 1400px) {
+  .hero {
+    padding: 100px 0;
+    &__img-star {
+      position: absolute;
+      top: -4%;
+      left: 46%;
+    }
+  }
+}
