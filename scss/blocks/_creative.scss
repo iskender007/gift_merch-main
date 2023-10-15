@@ -9,6 +9,8 @@
 
   &__wrapper {
     padding-top: 77px;
+    display: flex;
+    position: relative;
   }
   &__logo {
     padding-left: 120px;
@@ -43,5 +45,26 @@
     padding: 18px 43px;
     border-radius: 60px;
     background: #eef1f6;
+  }
+  &__image {
+  }
+  &__img3 {
+    position: absolute;
+    z-index: 1;
+    width: 380.549px;
+    height: 380.549px;
+    flex-shrink: 0;
+  }
+  &__img2 {
+    position: absolute;
+    z-index: 2;
+    width: 506px;
+    height: 506px;
+  }
+  &__img1 {
+    position: absolute;
+    width: 428px;
+    height: 428px;
+    z-index: 3;
   }
 }
